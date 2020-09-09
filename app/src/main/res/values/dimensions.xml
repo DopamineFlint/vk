@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_zero">0dp</dimen>
+
+    <dimen name="vk_logo_margin_top">52dp</dimen>
+
+    <dimen name="vk_edit_email_text_margin_top">224dp</dimen>
+
+    <dimen name="vk_edit_password_text_margin_top">4dp</dimen>
+
+    <dimen name="vk_button_edit_height">40dp</dimen>
+
+    <dimen name="vk_custom_widget">150dp</dimen>
+
+    <dimen name="vk_custom_avatar_width">71dp</dimen>
+    <dimen name="vk_custom_avatar_height">65dp</dimen>
+    <dimen name="vk_custom_avatar_margin_start">34dp</dimen>
+    <dimen name="vk_custom_avatar_margin_bottom">20dp</dimen>
+
+    <dimen name="vk_status_message_margin_top">8dp</dimen>
+
+    <dimen name="vk_disabled_edit_text_width">340dp</dimen>
+    <dimen name="vk_disabled_edit_text_padding_bottom">20dp</dimen>
+</resources>

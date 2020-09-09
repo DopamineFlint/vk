@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">vk_login_and_profile</string>
+    <string name="sign_in_button_text">Sign in</string>
+    <string name="button_edit_text">Edit</string>
+    <string name="edit_text_email">Email</string>
+    <string name="edit_text_password">Password</string>
+    <string name="vk_status_message">Status message</string>
+    <string name="vk_user_status">Online</string>
+    <string name="vk_user_name">Name Family Name</string>
+</resources>

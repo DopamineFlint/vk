@@ -1,0 +1,107 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/vk_main_color</item>
+        <item name="colorPrimaryDark">@color/vk_main_color</item>
+        <item name="colorAccent">@color/vk_main_color</item>
+    </style>
+
+    <style name="vk_button_log_in_style">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/vk_custom_button</item>
+        <item name="android:text">@string/sign_in_button_text</item>
+        <item name="android:textColor">@color/just_white</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="vk_button_edit_style">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">@dimen/vk_button_edit_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_zero</item>
+        <item name="android:background">@drawable/vk_custom_button</item>
+        <item name="android:text">@string/button_edit_text</item>
+        <item name="android:textColor">@color/just_white</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="vk_logo_style">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_marginTop">@dimen/vk_logo_margin_top</item>
+        <item name="srcCompat">@drawable/vk_logo</item>
+    </style>
+
+    <style name="vk_edit_email_text_style">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/vk_edit_email_text_margin_top</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/vk_custom_edit_text</item>
+        <item name="android:hint">@string/edit_text_email</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="vk_edit_password_text_style">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/vk_edit_password_text_margin_top</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/vk_custom_edit_text</item>
+        <item name="android:hint">@string/edit_text_password</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="vk_custom_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/vk_custom_widget</item>
+    </style>
+
+    <style name="vk_custom_avatar">
+        <item name="android:layout_width">@dimen/vk_custom_avatar_width</item>
+        <item name="android:layout_height">@dimen/vk_custom_avatar_height</item>
+        <item name="android:layout_marginStart">@dimen/vk_custom_avatar_margin_start</item>
+        <item name="android:layout_marginBottom">@dimen/vk_custom_avatar_margin_bottom</item>
+        <item name="android:src">@drawable/photo_of_me</item>
+    </style>
+
+    <style name="vk_status_message">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/vk_status_message_margin_top</item>
+        <item name="android:text">@string/vk_status_message</item>
+        <item name="android:textSize">@dimen/vk_status_message_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="vk_user_status">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_zero</item>
+        <item name="android:layout_marginTop">@dimen/vk_status_message_margin_top</item>
+        <item name="android:text">@string/vk_user_status</item>
+        <item name="android:textSize">@dimen/vk_status_message_text_size</item>
+    </style>
+
+    <style name="vk_user_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_zero</item>
+        <item name="android:text">@string/vk_user_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="vk_disabled_edit_text">
+        <item name="android:layout_width">@dimen/vk_disabled_edit_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:enabled">false</item>
+        <item name="android:paddingBottom">@dimen/vk_disabled_edit_text_padding_bottom</item>
+    </style>
+
+</resources>

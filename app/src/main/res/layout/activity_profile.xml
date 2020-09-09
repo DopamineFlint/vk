@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/vk_profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/vk_edit_button"
+        style="@style/vk_button_edit_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vk_custom_widget" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vk_custom_widget"
+        style="@style/vk_custom_widget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/vk_custom_avatar"
+            style="@style/vk_custom_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/photo_of_me" />
+
+        <TextView
+            android:id="@+id/vk_status_message"
+            style="@style/vk_status_message"
+            app:layout_constraintStart_toStartOf="@+id/vk_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/vk_user_name" />
+
+        <TextView
+            android:id="@+id/vk_user_status"
+            style="@style/vk_user_status"
+            app:layout_constraintBottom_toBottomOf="@+id/vk_custom_avatar"
+            app:layout_constraintStart_toStartOf="@+id/vk_status_message"
+            app:layout_constraintTop_toBottomOf="@+id/vk_status_message"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/vk_user_name"
+            style="@style/vk_user_name"
+            app:layout_constraintStart_toEndOf="@+id/vk_custom_avatar"
+            app:layout_constraintTop_toTopOf="@+id/vk_custom_avatar" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            style="@style/vk_disabled_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/vk_custom_avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
