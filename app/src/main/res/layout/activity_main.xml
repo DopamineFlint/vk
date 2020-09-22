@@ -8,15 +8,15 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/vk_edit_text_password"
         style="@style/vk_edit_password_text_style"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/vk_edit_text_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/vk_edit_text_email"
+        app:layout_constraintTop_toBottomOf="@+id/vk_edit_text_email" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/vk_edit_text_email"
         style="@style/vk_edit_email_text_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -26,9 +26,9 @@
     <Button
         android:id="@+id/vk_sign_in_button"
         style="@style/vk_button_log_in_style"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/vk_edit_text_password"
+        app:layout_constraintStart_toStartOf="@+id/vk_edit_text_password"
+        app:layout_constraintTop_toBottomOf="@+id/vk_edit_text_password" />
 
     <ImageView
         android:id="@+id/vk_logo_image_view"
