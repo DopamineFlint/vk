@@ -12,9 +12,12 @@ import maes.tech.intentanim.CustomIntent
 class ProfileActivity : AppCompatActivity() {
 
     companion object {
+
+        private const val SIGN_IN_KEY = "asd4a688wq65as5d"
+
         fun getNewInstance(context: Context, signInModel: SignInModel): Intent {
             val intent = Intent(context, ProfileActivity::class.java)
-            intent.putExtra(SignInModel::class.simpleName, signInModel)
+            intent.putExtra(SIGN_IN_KEY, signInModel)
             return intent
         }
     }
@@ -23,12 +26,12 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        val arguments: Bundle? = intent.extras
+        val arguments: Bundle? = intent.extras!!
         Log.d("My Log", "$arguments")
-        val signInModel: SignInModel? =
-            arguments?.getParcelable<SignInModel>(SignInModel::class.simpleName)
+        val signInModel: SignInModel =
+            arguments!!.getParcelable(SIGN_IN_KEY)!!
         Log.d("My Log", "$signInModel")
-        vk_profile_toolbar.title = signInModel?.email
+        vk_profile_toolbar.title = signInModel.email
     }
 
     override fun finish() {

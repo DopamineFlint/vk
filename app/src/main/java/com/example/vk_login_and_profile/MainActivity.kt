@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
 
-        savedInstanceState.getParcelable<SignInModel>("sign_in_model")
+        signInModel = savedInstanceState.getParcelable("sign_in_model")!!
         Log.d("myLog", "${signInModel.email} ${signInModel.password}")
     }
 

@@ -15,7 +15,6 @@
         <item name="android:text">@string/sign_in_button_text</item>
         <item name="android:textColor">@color/just_white</item>
         <item name="android:enabled">false</item>
-        <item name="android:onClick">onClickVkButton</item>
     </style>
 
     <style name="vk_button_edit_style">

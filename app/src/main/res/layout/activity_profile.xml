@@ -59,7 +59,6 @@
         style="@style/vk_button_edit_style"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vk_custom_avatar" />
 
@@ -68,8 +67,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="vk_status_message,vk_user_status,vk_user_name,vk_custom_avatar"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="731dp" />
+        app:constraint_referenced_ids="vk_status_message,vk_user_status,vk_user_name,vk_custom_avatar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@ import kotlinx.android.parcel.IgnoredOnParcel
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class SignInModel(var email: String = "", var password: String = "") : Parcelable {
+data class SignInModel(var email: String = "", var password: String = "") : Parcelable {
 
     @IgnoredOnParcel
     private val originEmail = "dpflint@yandex.ru"

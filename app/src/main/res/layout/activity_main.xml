@@ -11,7 +11,6 @@
         android:id="@+id/vk_edit_text_password"
         style="@style/vk_edit_password_text_style"
         app:layout_constraintEnd_toEndOf="@+id/vk_edit_text_email"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/vk_edit_text_email"
         app:layout_constraintTop_toBottomOf="@+id/vk_edit_text_email" />
 
