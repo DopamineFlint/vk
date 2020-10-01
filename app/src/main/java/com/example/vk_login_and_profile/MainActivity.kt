@@ -13,7 +13,10 @@ import maes.tech.intentanim.CustomIntent
 
 class MainActivity : AppCompatActivity() {
 
-    private var KEY_SAVED_INSTANT_SIGN_IN_MODEL = "sign_in_model"
+    companion object {
+        private const val KEY_SAVED_INSTANT_SIGN_IN_MODEL = "sign_in_model"
+    }
+
     private var signInModel: SignInModel = SignInModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
