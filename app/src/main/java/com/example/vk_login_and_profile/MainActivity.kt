@@ -13,6 +13,7 @@ import maes.tech.intentanim.CustomIntent
 
 class MainActivity : AppCompatActivity() {
 
+    private var KEY_SAVED_INSTANT_SIGN_IN_MODEL = "sign_in_model"
     private var signInModel: SignInModel = SignInModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,13 +68,13 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
 
-        signInModel = savedInstanceState.getParcelable("sign_in_model")!!
+        signInModel = savedInstanceState.getParcelable(KEY_SAVED_INSTANT_SIGN_IN_MODEL)!!
         Log.d("myLog", "${signInModel.email} ${signInModel.password}")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 
-        outState.putParcelable("sign_in_model", signInModel)
+        outState.putParcelable(KEY_SAVED_INSTANT_SIGN_IN_MODEL, signInModel)
     }
 }
